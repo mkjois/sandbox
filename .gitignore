@@ -1,7 +1,3 @@
-racket/fast_inference
-racket/rosette
-rust/twenty48
-
 *.aux
 *.log
 *.o
