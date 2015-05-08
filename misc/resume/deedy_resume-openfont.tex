@@ -1,0 +1,290 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{verbatim}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Manny}{Jois}{
+%\urlstyle{same}\url{http://debarghyadas.com} \\
+\href{mailto:m.k.jois@berkeley.edu}{m.k.jois@berkeley.edu} | 650 504 4702 \\
+Berkeley, CA | github.com/mkjois
+}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.31\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\sectionsep
+\subsection{University of California, Berkeley}
+\descript{B.S. Electrical Engineering and Computer Science}
+Class of 2016
+\subsection{GPA: 3.96}
+Dean's Honors
+\sectionsep
+
+
+\begin{comment}
+\descript{BS in Computer Science}
+\location{Expected May 2014 | Ithaca, NY}
+Conc. in Software Engineering \\
+College of Engineering \\
+Dean's List (All Semesters) \\
+\location{ Cum. GPA: 3.92 / 4.0 \\
+Major GPA: 3.94 / 4.0}
+\sectionsep
+\end{comment}
+
+\begin{comment}
+\subsection{La Martiniere for Boys}
+\location{Grad. May 2011|  Kolkata, India}
+\sectionsep
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+\section{Links} 
+Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+\sectionsep
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\sectionsep
+\begin{comment}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Open Source Software Engineering \\
+Advanced Interactive Graphics \\
+Compilers + Practicum \\
+Cloud Computing \\
+\sectionsep
+\end{comment}
+
+%\subsection{Undergraduate}
+\begin{tightemize}
+\item Data Structures \\
+\item Machine Structures \\
+\item Discrete Mathematics \\
+\item Signals and Systems \\
+\item Circuits \\
+\item Communication Networks \\
+\item Algorithms \\
+\item Operating Systems \\
+\item Programming Language Design and Implementation \\
+\item Artificial Intelligence \\
+\item Machine Learning (current) \\
+\item Randomized Algorithms (current) \\
+\item Computational Models of Cognition (current)
+\end{tightemize}
+
+\begin{comment}
+Information Retrieval \\
+Operating Systems \\
+Artificial Intelligence + Practicum \\
+Functional Programming \\
+Computer Graphics + Practicum \\
+{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+Unix Tools and Scripting \\
+\end{comment}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\sectionsep
+\subsection{Extensive experience}
+Python \textbullet{} Java \textbullet{} C \textbullet{}  HTML \textbullet{} CSS \textbullet{} JavaScript \textbullet{} Node.js \textbullet{} jQuery \textbullet{} Angular.js \textbullet{} Git \textbullet{} Bash \textbullet{} Linux \textbullet{} \LaTeX 
+\sectionsep
+\subsection{Moderate work}
+C++ \textbullet{} C\# \textbullet{} Scheme/Church \textbullet{} Data visualization \textbullet{} Classification \textbullet{} Eclipse
+\sectionsep
+\subsection{Basic exposure}
+Hadoop \textbullet{} MATLAB
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.64\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\sectionsep
+\runsubsection{Cisco Systems}\\
+\descript{| Software Engineering Intern}
+\location{May 2014 – Aug 2014 | San Jose, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Devised network topologies used to test performance of the latest iterations of network security appliances
+\item Wrote Python scripts to analyze and display results of code coverage test outputs.
+\item Team project to develop an internal tool to automatically set up test beds and run tests using driver-building software.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Associated Students of the University of California}\\
+\descript{| Web Development Team}
+\location{Sep 2013 – May 2014 | Berkeley, CA}
+\begin{tightemize}
+\item Maintained web pages with data critical to the operation of the university student government.
+\item Part of the team tasked to transition the organization website (asuc.org) to a new host and framework.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Pioneers in Engineering}\\
+\descript{| Kit Development Staff}
+\location{Sep 2012 – Apr 2013 | Berkeley, CA}
+\begin{tightemize}
+\item Wrote and documented code for various robot sensors and radios.
+\item Worked with graduate students on implementation and integration of a field control system for annual high-school robot competition.
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\sectionsep
+\runsubsection{JavaScript Contracts}\\
+\location{Nov 2014}
+Developed a language embedded in JavaScript to enforce function invariants at all times, as well as conduct simple tests of functions upon loading a script (see github).
+
+\sectionsep
+\runsubsection{Language popularity}\\
+\location{Sep 2014}
+Used d3 to create a visualization of programming language popularity based on a dataset containing years of creation, language paradigm and number of GitHub repositories (see github).
+
+\sectionsep
+\runsubsection{UC Berkeley Food Pantry}\\
+\location{Jan 2014 – Apr 2014}
+Helped create an official website (pantry.asuc.org) for the UC Berkeley Food Pantry, an initiative that looks to provide students who struggle financially with nourishing meals to support them.
+
+\sectionsep
+\runsubsection{Hadoop Map-Reduce}\\
+\location{Sep 2013}
+Machine structures class project using Hadoop's MapReduce framework to analyze large bodies of text using word co-occurrence algorithms. Our program used distributed computing power to determine, given a word, what other words were most associated with it.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+\section{Awards} 
+\sectionsep
+\begin{tabular}{rll}
+2014	     & top 52/2500  & KPCB Engineering Fellow\\
+2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+2013	     & National  & Jump Trading Challenge Finalist\\
+2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+\end{tabular}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\section{Societies} 
+
+\begin{tabular}{rll}
+2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+2012   &  National  & Golden Key International Honor Society\\
+2012   &  National   & National Society of Collegiate Scholars\\
+\end{tabular}
+\sectionsep
+\end{comment}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
