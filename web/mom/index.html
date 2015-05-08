@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mother's Day</title>
+		<link rel="stylesheet" type="text/css" href="mom.css">
+		<script type="text/javascript" src="jQuery.js"></script>
+		<script type="text/javascript" src="mom.js"></script>
+	</head>
+	<body>
+		<div id="leftHalf" align="center">
+			<div id="leftHalfInner">
+				<button id="startButton" value="onStart">How about a <strong>quiz</strong>?<br>Click to start!</button>
+				<form id="quizForm">
+                    <div class="question" id="q1">
+                        <label>Do you have a son?</label><br>
+                        <input type="radio" name="hasSon" value="yes1">Yes<br>
+                        <input type="radio" name="hasSon" value="no1">No<br>
+                        <button type="button" value="1">Continue</button>
+                    </div>
+                    <div class="question" id="q2">
+                        <label>What is his name? (Click the button, don't hit enter)</label><br>
+                        <input type="text" placeholder="First and last name"><br>
+                        <button type="button" value="2">Continue</button>
+                    </div>
+                    <div class="question" id="q3">
+                        <label>What did he accomplish yesterday? (Check all that apply)</label><br>
+                        <input type="checkbox" class="foo">Eat a burrito<br>
+                        <input type="checkbox" class="foo">Watch the San Antonio vs. Golden State NBA basketball game<br>
+                        <input type="checkbox">Watch the Atlanta vs. San Francisco MLB baseball game<br>
+                        <input type="checkbox">Study thermodynamics, electromagnetism, and C++<br>
+                        <input type="checkbox">Write an amazing webpage<br>
+                        <button type="button" value="3">Continue</button>
+                    </div>
+                    <div class="question" id="q4">
+                        <label>Will he ace his finals?</label><br>
+                        <input type="radio" name="aceFinals" value="yes4">Yes<br>
+                        <input type="radio" name="aceFinals" value="no4">No<br>
+                        <button type="button" value="onSubmit">Submit</button>
+                    </div>
+				</form>
+                <div class="quizEnd" id="allCorrect">You know your son all too well.</div>
+			</div>
+		</div>
+		<div id="rightHalf">
+            <div id="tryAgain"></div>
+			<img class="quizEnd" id="mothersDay" alt="Happy Mother's Day!" src="background.png" />
+            <div class="quizEnd" id="belated"><span>belated</span></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-color: #ff80ff;
+}
+
+#leftHalf {
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+#rightHalf {
+	float: left;
+	padding-left: 5%;
+}
+
+#startButton {
+    margin-top: 50%;
+}
+
+.question, #tryAgain {
+    background-color: #cc66cc;
+    border: 2px solid #522952;
+    border-radius: 10px;
+    padding: 8px 15px 8px 15px;
+    text-align: left;
+}
+
+.questionHider {
+    visibility: hidden;
+}
+
+form, input, button {
+    font-size: 15pt;
+}
+
+label {
+    font-weight: bold;
+}
+
+#allCorrect, #tryAgain {
+    margin-top: 50%;
+    font-size: 16pt;
+    display: inline-block;
+}
+
+#tryAgain {
+    position: relative;
+    background-color: #ff6666;
+    border-color: #ff0000;
+}
+
+#mothersDay {
+    position: relative;
+	height: 100%;
+}
+
+#belated {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+
+#belated span {
+    color: white;
+    font-size: 16pt;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.7);
+    padding: 0% 2% 0% 2%;
+}
