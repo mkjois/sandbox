@@ -1,0 +1,9 @@
+[package]
+
+name = "alpha"
+version = "0.0.1"
+authors = [ "Manny Jois <m.k.jois@berkeley.edu>" ]
+
+[[bin]]
+
+name = "alpha"

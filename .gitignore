@@ -1,0 +1,16 @@
+racket/fast_inference
+racket/rosette
+rust/twenty48
+
+*.aux
+*.log
+*.o
+*.swp
+*.swo
+.*.swp
+.*.swo
+*.pyc
+*.class
+*.zip
+*.DS_Store
+*.db

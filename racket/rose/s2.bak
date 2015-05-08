@@ -1,0 +1,11 @@
+#lang racket
+
+(define (+ x y)
+  `(+ ,x ,y))
+
+(+ 1 2)
+
+; can we handle variables natively as opposed havng to give them symbol names
+
+(+ 'x (+ 1 2))
+

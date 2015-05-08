@@ -1,0 +1,15 @@
+Here are some sample runs:
+
+
+$ racket hello-world.rkt
+Hello World!
+
+
+
+$ echo 10 | racket prime.rkt
+Primes up to: 2 3 5 7 
+
+
+
+# http://www.99-bottles-of-beer.net/language-brainfuck-101.html
+$ racket beer.rkt

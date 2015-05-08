@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+DATAFILE=~/Apps/data/myssh.conf
+
+while read col1 col2; do
+    if [ $col1 == $1 ]; then
+        cmd="ssh $col2@$2.cs.berkeley.edu"
+        echo $cmd
+        exit 0
+    fi
+done < $DATAFILE
+echo "error: invalid class $1"
+exit 1

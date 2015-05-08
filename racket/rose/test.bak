@@ -1,0 +1,16 @@
+#lang racket
+
+(define-syntax b (lambda (stx) #'1))
+(define-syntax c (lambda (stx) (syntax-shift-phase-level #'(define a 2) -1)))
+
+(b)
+(c)
+; a
+
+(define-syntax (lift stx)
+  (syntax-case stx ()
+    [(_ op)
+     (with-syntax ([aaa 1])
+       #`(begin (define (op x y) (orig x y))))]))
+(lift +)
+(+ 1 2)

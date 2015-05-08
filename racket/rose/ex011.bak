@@ -1,0 +1,15 @@
+#lang racket
+
+; Arithmetic expressions and variables.
+; Compile by overriding the built-in + function.
+
+; This is a compiler from YL to formula ASTs
+
+(define (+ x y) `(+ ,x ,y))
+
+; This is a sample YL program. Evaluation of this
+; program compiles this program to a formula.
+
+(+ 1 2)
+
+(+ 'x (+ 1 'y))
