@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+# Broadcom wireless driver
+sudo powerpill -U /build/broadcom-wl-dkms/broadcom-wl-dkms-*.pkg.tar.xz
+sudo modprobe wl
