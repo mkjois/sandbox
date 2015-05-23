@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+gvim "scp://mj@tetra.mod9.com/~/git/$1"
