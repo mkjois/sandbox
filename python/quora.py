@@ -12,6 +12,7 @@ class Node:
     def update(self):
         pass
 
+# compute answer
 def f(N, T, A):
     nodes = [Node(T[n-1], adj) for n, adj in A.items()]
     for _ in range(N): # iterations to convergence
