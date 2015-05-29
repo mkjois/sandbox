@@ -1,0 +1,27 @@
+#! /usr/bin/env bash
+
+NOTIF_TIME=1000
+
+switch () {
+    pacmd set-default-sink $1
+    pacmd list-sink-inputs | grep index | while read line; do
+        pacmd move-sink-input `echo $line | cut -f2 -d' '` $1
+    done
+}
+
+if [ "$(pacmd list-sinks | grep index | wc -l)" == "1" ]; then
+    exit # should it be a 0 or 1? decisions, decisions...
+fi
+
+sink=$(pacmd info | grep 'Default sink name' | cut -f 4 -d ' ')
+if [[ $sink == *hdmi* ]]; then
+    switch 1
+    notify-send -t $NOTIF_TIME -i audio-card 'Builtin audio'
+elif [[ $sink == *analog* ]]; then
+    switch 0
+    notify-send -t $NOTIF_TIME -i audio-card 'HDMI audio'
+else
+    switch 1
+    notify-send -t $NOTIF_TIME -i audio-card 'Builtin audio'
+fi
+unset sink
