@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+git add . && git commit -m "$1"
+if [ $? != 0 ]; then
+  exit 1
+fi
+shift
+git push $*
