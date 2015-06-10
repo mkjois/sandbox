@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+while [[ $(date +%S) != "00" ]]; do
+    tput sc
+    tput cup 0 $(($(tput cols)-25))
+    echo -ne "${Purple}$(date +'%a %b %d %l:%M:%S%P %Z')"
+    tput rc
+    sleep 1
+done
+
+while true; do
+    tput sc
+    tput cup 0 $(($(tput cols)-22))
+    echo -ne "${Purple}$(date +'%a %b %d %l:%M%P %Z')"
+    tput rc
+    sleep 60
+done
