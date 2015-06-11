@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+    echo 'No image?'
+    exit 1
+fi
+
+image=$1
+if [ "$2" ]; then
+    name="--name $2 "
+fi
+if [ "$3" ]; then
+    host="-h $3 "
+elif [ "$2" ]; then
+    host="-h $2 "
+fi
+
+docker run -it ${name}${host}${image} bash
