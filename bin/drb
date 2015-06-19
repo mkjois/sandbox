@@ -15,4 +15,4 @@ elif [ "$2" ]; then
     host="-h $2 "
 fi
 
-docker run -it ${name}${host}${image} bash
+docker run --rm=true -it ${name}${host}${image} bash
