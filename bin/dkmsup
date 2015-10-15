@@ -4,4 +4,4 @@
 LINUX_INFO_CMD="sudo pacman -Qi linux"
 KERNEL_VERSION=$($LINUX_INFO_CMD | grep 'Version' | tr -s ' ' | cut -d ' ' -f 3)
 ARCHITECTURE=$($LINUX_INFO_CMD | grep 'Architecture' | tr -s ' ' | cut -d ' ' -f 3)
-sudo dkms install broadcom-wl/6.30.223.248 -k $KERNEL_VERSION-ARCH/$ARCHITECTURE
+sudo dkms install broadcom-wl/6.30.223.271 -k $KERNEL_VERSION-ARCH/$ARCHITECTURE
