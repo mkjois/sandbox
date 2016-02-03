@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+if [ "$1" = "up" ]; then
+    sudo rfkill unblock bluetooth
+    sudo hciconfig hci0 up
+    sudo systemctl start bluetooth
+elif [ "$1" = "down" ]; then
+    sudo hciconfig hci0 down
+    sudo systemctl stop bluetooth
+else
+    echo "up or down?" >&2
+    exit 1
+fi
