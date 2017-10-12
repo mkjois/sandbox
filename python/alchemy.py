@@ -41,7 +41,7 @@ manny.emails = [Email(email="m.k.jois@gmail.com"),
 junseok.emails = [Email(email="lee.junseok@berkeley.edu")]
 kyle.emails = [Email(email="khirai94@yahoo.com")]
 
-engine = sa.create_engine("postgresql+psycopg2://upagedb:asdfmoney@upage-sample-1.ci7vq8x4kd8z.us-west-2.rds.amazonaws.com:5432/usample1")
+engine = sa.create_engine("postgresql+psycopg2://username:password@sample-1.ci7vq8x4kd8z.us-west-2.rds.amazonaws.com:5432/sample1")
 Base.metadata.create_all(engine)
 Session.configure(bind=engine)
 
